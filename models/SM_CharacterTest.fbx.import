@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://f1n0q4shhh0x"
-path="res://.godot/imported/SM_Office.fbx-3fc943052c86d203181512f547c21789.scn"
+uid="uid://b73kswuwc1m67"
+path="res://.godot/imported/SM_CharacterTest.fbx-376349478ead120812e458cb62253ff4.scn"
 
 [deps]
 
-source_file="res://models/SM_Office.fbx"
-dest_files=["res://.godot/imported/SM_Office.fbx-3fc943052c86d203181512f547c21789.scn"]
+source_file="res://models/SM_CharacterTest.fbx"
+dest_files=["res://.godot/imported/SM_CharacterTest.fbx-376349478ead120812e458cb62253ff4.scn"]
 
 [params]
 

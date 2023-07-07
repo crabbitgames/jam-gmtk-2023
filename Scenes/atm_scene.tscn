@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://m43dqdip5466"]
 
-[ext_resource type="PackedScene" uid="uid://f1n0q4shhh0x" path="res://Models/SM_Office.fbx" id="1_brokq"]
+[ext_resource type="PackedScene" uid="uid://f1n0q4shhh0x" path="res://models/SM_Office.fbx" id="1_brokq"]
 
 [node name="ATM Scene" type="Node"]
 
