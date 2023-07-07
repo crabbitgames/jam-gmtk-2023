@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://br0xahka3m0xf"]
 
-[ext_resource type="Material" uid="uid://digelf4hv462k" path="res://Material/M_MoneyBill.tres" id="1_ik33r"]
+[ext_resource type="Material" uid="uid://digelf4hv462k" path="res://Material/M_MoneyBill.tres" id="1_8q0yh"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_k6okp"]
-material = ExtResource("1_ik33r")
+material = ExtResource("1_8q0yh")
 size = Vector2(0.2, 0.1)
 orientation = 1
 

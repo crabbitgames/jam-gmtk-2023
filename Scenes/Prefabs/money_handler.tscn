@@ -1,16 +1,16 @@
 [gd_scene load_steps=7 format=3 uid="uid://bbxg81cmjqf3h"]
 
-[ext_resource type="Script" path="res://Scripts/MoneyHandler.cs" id="1_x0ggh"]
-[ext_resource type="Texture2D" uid="uid://dm5kwcmhvemu0" path="res://Textures/T_MoneyBill_1.png" id="2_8v7qb"]
-[ext_resource type="Texture2D" uid="uid://dqohip843q250" path="res://Textures/T_MoneyBill_5.png" id="3_e6rkx"]
-[ext_resource type="Texture2D" uid="uid://blxb5ph6kmhpy" path="res://Textures/T_MoneyBill_10.png" id="4_2tlfw"]
-[ext_resource type="Texture2D" uid="uid://cr1awultupw67" path="res://Textures/T_MoneyBill_20.png" id="5_psd62"]
-[ext_resource type="Texture2D" uid="uid://1wd04tn1ee33" path="res://Textures/T_MoneyBill_50.png" id="6_i0v8f"]
+[ext_resource type="Script" path="res://Scripts/MoneyHandler.cs" id="1_22nki"]
+[ext_resource type="Texture2D" uid="uid://dm5kwcmhvemu0" path="res://Textures/T_MoneyBill_1.png" id="2_usvkn"]
+[ext_resource type="Texture2D" uid="uid://dqohip843q250" path="res://Textures/T_MoneyBill_5.png" id="3_0bv3v"]
+[ext_resource type="Texture2D" uid="uid://blxb5ph6kmhpy" path="res://Textures/T_MoneyBill_10.png" id="4_1rpc5"]
+[ext_resource type="Texture2D" uid="uid://cr1awultupw67" path="res://Textures/T_MoneyBill_20.png" id="5_ry5gu"]
+[ext_resource type="Texture2D" uid="uid://1wd04tn1ee33" path="res://Textures/T_MoneyBill_50.png" id="6_22kjv"]
 
 [node name="MoneyHandler" type="Node"]
-script = ExtResource("1_x0ggh")
-moneyTexture_1 = ExtResource("2_8v7qb")
-moneyTexture_5 = ExtResource("3_e6rkx")
-moneyTexture_10 = ExtResource("4_2tlfw")
-moneyTexture_20 = ExtResource("5_psd62")
-moneyTexture_50 = ExtResource("6_i0v8f")
+script = ExtResource("1_22nki")
+moneyTexture_1 = ExtResource("2_usvkn")
+moneyTexture_5 = ExtResource("3_0bv3v")
+moneyTexture_10 = ExtResource("4_1rpc5")
+moneyTexture_20 = ExtResource("5_ry5gu")
+moneyTexture_50 = ExtResource("6_22kjv")

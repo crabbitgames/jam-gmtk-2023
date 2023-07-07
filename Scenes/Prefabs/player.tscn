@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://ddn3b3nisf7vu"]
 
-[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_ov0w8"]
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_omjci"]
 
 [node name="Player" type="Node3D"]
-script = ExtResource("1_ov0w8")
+script = ExtResource("1_omjci")
 userInterfaceNodePath = NodePath("../UserInterface")
 
 [node name="Camera3D" type="Camera3D" parent="."]
