@@ -15,5 +15,6 @@
 [node name="MoneyNote" parent="." instance=ExtResource("3_o7slu")]
 
 [node name="UserInterface" parent="." instance=ExtResource("4_rdswo")]
+moneyHandlerNodePath = NodePath("../MoneyHandler")
 
 [node name="MoneyHandler" parent="." instance=ExtResource("5_u6hwv")]
