@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddn3b3nisf7vu"]
+
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_ov0w8"]
+
+[node name="Player" type="Node3D"]
+script = ExtResource("1_ov0w8")
+userInterfaceNodePath = NodePath("../UserInterface")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0.8, 0)
+fov = 45.0

@@ -32,6 +32,8 @@ public partial class UserInterface : Control
 				displayedAmount += (int)addAttemptAmount;
 
 				// Add new note to screen.
+				TextureRect dollar = dollarTemplate.Instantiate<TextureRect>();
+
 				
 				
 				// TODO remove this.
