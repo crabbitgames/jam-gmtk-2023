@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bm2d2lvvs2n7g"]
+
+[ext_resource type="FontFile" uid="uid://dsh5iaj4bs1ka" path="res://User Interface/Itim-Regular.ttf" id="1_w2pxy"]
+
+[resource]
+default_font = ExtResource("1_w2pxy")
+default_font_size = 24
