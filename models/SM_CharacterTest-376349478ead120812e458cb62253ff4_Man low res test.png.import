@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds48q5vvuy5e5"
-path.s3tc="res://.godot/imported/SM_CharacterTest-376349478ead120812e458cb62253ff4_Man low res test.png-305f811805fa1f3558cc9096fd1803cf.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_CharacterTest-376349478ead120812e458cb62253ff4_Man low res test.png-c3206466093a2105fd7a9600e5f6140a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://models/SM_CharacterTest-376349478ead120812e458cb62253ff4_Man low res test.png"
-dest_files=["res://.godot/imported/SM_CharacterTest-376349478ead120812e458cb62253ff4_Man low res test.png-305f811805fa1f3558cc9096fd1803cf.s3tc.ctex"]
+source_file="res://Models/SM_CharacterTest-376349478ead120812e458cb62253ff4_Man low res test.png"
+dest_files=["res://.godot/imported/SM_CharacterTest-376349478ead120812e458cb62253ff4_Man low res test.png-c3206466093a2105fd7a9600e5f6140a.s3tc.ctex"]
 
 [params]
 

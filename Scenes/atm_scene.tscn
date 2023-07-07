@@ -1,9 +1,165 @@
-[gd_scene load_steps=2 format=3 uid="uid://m43dqdip5466"]
+[gd_scene load_steps=17 format=3 uid="uid://m43dqdip5466"]
 
-[ext_resource type="PackedScene" uid="uid://f1n0q4shhh0x" path="res://models/SM_Office.fbx" id="1_brokq"]
+[ext_resource type="PackedScene" uid="uid://f1n0q4shhh0x" path="res://Models/SM_Office.fbx" id="1_brokq"]
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="2_kfvgg"]
+[ext_resource type="Material" uid="uid://digelf4hv462k" path="res://Material/M_MoneyBill.tres" id="3_2or5t"]
+[ext_resource type="Script" path="res://Scripts/UserInterface.cs" id="4_jpupo"]
+[ext_resource type="PackedScene" uid="uid://cd7uk2so3xek1" path="res://Scenes/Prefabs/UI/dollar_template.tscn" id="5_8m3aw"]
+[ext_resource type="Texture2D" uid="uid://dm5kwcmhvemu0" path="res://Textures/T_MoneyBill_1.png" id="5_y5x6q"]
+[ext_resource type="Texture2D" uid="uid://dqohip843q250" path="res://Textures/T_MoneyBill_5.png" id="6_lahrj"]
+[ext_resource type="Script" path="res://Scripts/MoneyHandler.cs" id="6_ylibk"]
+[ext_resource type="Texture2D" uid="uid://blxb5ph6kmhpy" path="res://Textures/T_MoneyBill_10.png" id="7_ds46t"]
+[ext_resource type="Texture2D" uid="uid://cr1awultupw67" path="res://Textures/T_MoneyBill_20.png" id="8_s457k"]
+[ext_resource type="Texture2D" uid="uid://1wd04tn1ee33" path="res://Textures/T_MoneyBill_50.png" id="9_rip3e"]
+[ext_resource type="Theme" uid="uid://bm2d2lvvs2n7g" path="res://User Interface/UI.tres" id="10_vuysj"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m6pob"]
+
+[sub_resource type="Sky" id="Sky_ctjih"]
+sky_material = SubResource("ProceduralSkyMaterial_m6pob")
+
+[sub_resource type="Environment" id="Environment_wdjhq"]
+background_mode = 1
+background_color = Color(0.52549, 0.815686, 1, 1)
+sky = SubResource("Sky_ctjih")
+ambient_light_source = 1
+ambient_light_color = Color(0.705882, 0.713726, 0.807843, 1)
+
+[sub_resource type="QuadMesh" id="QuadMesh_k6okp"]
+material = ExtResource("3_2or5t")
+size = Vector2(0.2, 0.1)
+orientation = 1
 
 [node name="ATM Scene" type="Node"]
 
 [node name="Environment" type="Node3D" parent="."]
 
 [node name="SM_Office" parent="Environment" instance=ExtResource("1_brokq")]
+
+[node name="Room Light" type="OmniLight3D" parent="Environment/SM_Office"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.13258, 0)
+light_color = Color(0.811765, 0.768627, 0.611765, 1)
+light_energy = 0.309
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
+omni_range = 1.616
+omni_attenuation = 0.353554
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Environment/SM_Office"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.964516, 0.848076, -0.201199)
+light_color = Color(0, 1, 0, 1)
+shadow_enabled = true
+omni_range = 0.116
+omni_attenuation = 0.0346741
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Environment"]
+environment = SubResource("Environment_wdjhq")
+
+[node name="Player" type="Node3D" parent="."]
+script = ExtResource("2_kfvgg")
+userInterfaceNodePath = NodePath("../UserInterface")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0.8, 0)
+fov = 45.0
+
+[node name="MoneyNote" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.164948, 0.676422, 0)
+mesh = SubResource("QuadMesh_k6okp")
+
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_jpupo")
+moneyHandlerNodePath = NodePath("../MoneyHandler")
+dollarTemplate = ExtResource("5_8m3aw")
+
+[node name="Money Heading" type="Label" parent="UserInterface"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 121.0
+offset_bottom = 73.0
+theme = ExtResource("10_vuysj")
+text = "My Money"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Money Amount" type="Label" parent="UserInterface"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 49.08
+offset_right = 121.0
+offset_bottom = 102.345
+theme = ExtResource("10_vuysj")
+theme_override_font_sizes/font_size = 41
+text = "$200"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Rating Heading" type="Label" parent="UserInterface"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -71.79
+offset_right = 175.0
+offset_bottom = -29.79
+grow_vertical = 0
+theme = ExtResource("10_vuysj")
+text = "Suspiciousness
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UserInterface/Rating Heading"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -70.5
+offset_top = -6.21
+offset_right = 70.5
+offset_bottom = 3.79
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="ColorRect" type="ColorRect" parent="UserInterface/Rating Heading/HBoxContainer"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="UserInterface/Rating Heading/HBoxContainer"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="UserInterface/Rating Heading/HBoxContainer"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="UserInterface/Rating Heading/HBoxContainer"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="UserInterface/Rating Heading/HBoxContainer"]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="MoneyHandler" type="Node" parent="."]
+script = ExtResource("6_ylibk")
+moneyTexture_1 = ExtResource("5_y5x6q")
+moneyTexture_5 = ExtResource("6_lahrj")
+moneyTexture_10 = ExtResource("7_ds46t")
+moneyTexture_20 = ExtResource("8_s457k")
+moneyTexture_50 = ExtResource("9_rip3e")
