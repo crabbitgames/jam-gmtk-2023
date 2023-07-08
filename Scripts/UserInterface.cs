@@ -8,22 +8,33 @@ public partial class UserInterface : Control
 	public Texture2D upArrow, rightArrow, downArrow, leftArrow;
 
 	[Export]
-	public NodePath moneyHandlerNodePath, downButtonNodePath;
+	public NodePath
+		moneyHandlerNodePath,
+		cashControlNodePath,
+		plasticControlNodePath,
+		downButtonNodePath;
 
 	[Export]
 	public PackedScene dollarTemplate;
 
-	public delegate void OnDownButtonHandler(bool direction);
-	public event OnDownButtonHandler OnDownButtonPressed;
-
 	private MoneyHandler _moneyHandler = null;
+	private Control
+		_cashControl = null,
+		_plasticControl = null;
+
 	private Button _downButton;
 	private bool _downButtonState = false;
+	public delegate void OnDownButtonHandler(bool direction);
+	public event OnDownButtonHandler OnDownButtonPressed;
 
 	// Called on Player _Ready().
 	public void Initialise(int amount)
 	{
 		_moneyHandler ??= GetNode<MoneyHandler>(moneyHandlerNodePath);
+
+		_cashControl ??= GetNode<Control>(cashControlNodePath);
+		_plasticControl ??= GetNode<Control>(plasticControlNodePath);
+
 		_downButton ??= GetNode<Button>(downButtonNodePath);
 		_downButton.ButtonUp += OnDownButton;
 
@@ -49,10 +60,11 @@ public partial class UserInterface : Control
 
 				dollar.Texture = _moneyHandler.GetMoneyTexture(addAttemptAmount);
 
-				AddChild(dollar);
+				_cashControl.AddChild(dollar);
 			}
 			//The random amount is disallowed, lower the maximum random denomination
-			else {
+			else
+			{
 				maxDenomination--;
 			}
 		}
@@ -63,11 +75,24 @@ public partial class UserInterface : Control
 	{
 	}
 
-	public void OnDownButton() {
+	public void OnDownButton()
+	{
 		_downButtonState = !_downButtonState;
 
 		_downButton.Icon = _downButtonState ? upArrow : downArrow;
 
 		OnDownButtonPressed?.Invoke(_downButtonState);
+	}
+
+	public void OnCashButton()
+	{
+		_cashControl.Show();
+		_plasticControl.Hide();
+	}
+
+	public void OnPlasticButton()
+	{
+		_cashControl.Hide();
+		_plasticControl.Show();
 	}
 }

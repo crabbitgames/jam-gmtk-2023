@@ -20,6 +20,8 @@ upArrow = ExtResource("2_sxm0v")
 rightArrow = ExtResource("3_6eonk")
 downArrow = ExtResource("4_lnrxf")
 leftArrow = ExtResource("5_mjagj")
+cashControlNodePath = NodePath("Cash Control")
+plasticControlNodePath = NodePath("Plastic Control")
 downButtonNodePath = NodePath("DownButton")
 dollarTemplate = ExtResource("2_x8pae")
 
@@ -112,6 +114,32 @@ anchor_bottom = 0.75
 mouse_filter = 2
 color = Color(0, 0, 0, 0.196078)
 
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 3.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="CashButton" type="Button" parent="ColorRect/HBoxContainer"]
+custom_minimum_size = Vector2(35, 0)
+layout_mode = 2
+theme = ExtResource("3_7gl4f")
+theme_override_font_sizes/font_size = 12
+text = "CA$H"
+
+[node name="CardButton" type="Button" parent="ColorRect/HBoxContainer"]
+custom_minimum_size = Vector2(52, 0)
+layout_mode = 2
+theme = ExtResource("3_7gl4f")
+theme_override_font_sizes/font_size = 12
+text = "PLASTIC"
+
 [node name="DownButton" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = -1
@@ -128,3 +156,24 @@ grow_vertical = 0
 theme = ExtResource("3_7gl4f")
 icon = ExtResource("4_lnrxf")
 icon_alignment = 1
+
+[node name="Cash Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Plastic Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="button_up" from="ColorRect/HBoxContainer/CashButton" to="." method="OnCashButton"]
+[connection signal="button_up" from="ColorRect/HBoxContainer/CardButton" to="." method="OnPlasticButton"]
