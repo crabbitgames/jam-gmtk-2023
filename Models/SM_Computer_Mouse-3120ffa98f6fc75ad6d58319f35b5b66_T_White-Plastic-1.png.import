@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qxkxf4q657jm"
-path.s3tc="res://.godot/imported/SM_Computer_Mouse-3120ffa98f6fc75ad6d58319f35b5b66_T_White-Plastic-1.png-f7096ec27a0a92c5e4eb3f8eab8659da.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_Computer_Mouse-3120ffa98f6fc75ad6d58319f35b5b66_T_White-Plastic-1.png-20f9542d0f30e51269919f9f68afb303.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://models/SM_Computer_Mouse-3120ffa98f6fc75ad6d58319f35b5b66_T_White-Plastic-1.png"
-dest_files=["res://.godot/imported/SM_Computer_Mouse-3120ffa98f6fc75ad6d58319f35b5b66_T_White-Plastic-1.png-f7096ec27a0a92c5e4eb3f8eab8659da.s3tc.ctex"]
+source_file="res://Models/SM_Computer_Mouse-3120ffa98f6fc75ad6d58319f35b5b66_T_White-Plastic-1.png"
+dest_files=["res://.godot/imported/SM_Computer_Mouse-3120ffa98f6fc75ad6d58319f35b5b66_T_White-Plastic-1.png-20f9542d0f30e51269919f9f68afb303.s3tc.ctex"]
 
 [params]
 

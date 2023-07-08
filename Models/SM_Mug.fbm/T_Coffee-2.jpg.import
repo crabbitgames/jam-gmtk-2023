@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckpdbuavjhu80"
-path="res://.godot/imported/T_Coffee-2.jpg-6b7ddf44ea16bead45f6cc83ff01e5db.ctex"
+path="res://.godot/imported/T_Coffee-2.jpg-3e522f1eae8b5e995809da01743f9823.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/SM_Mug.fbm/T_Coffee-2.jpg"
-dest_files=["res://.godot/imported/T_Coffee-2.jpg-6b7ddf44ea16bead45f6cc83ff01e5db.ctex"]
+source_file="res://Models/SM_Mug.fbm/T_Coffee-2.jpg"
+dest_files=["res://.godot/imported/T_Coffee-2.jpg-3e522f1eae8b5e995809da01743f9823.ctex"]
 
 [params]
 

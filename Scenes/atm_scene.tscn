@@ -12,6 +12,7 @@
 [node name="Environment" parent="." instance=ExtResource("1_037x0")]
 
 [node name="Player" parent="." instance=ExtResource("2_h3ypy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0818801)
 startMoney = 125
 
 [node name="UserInterface" parent="." instance=ExtResource("4_rdswo")]

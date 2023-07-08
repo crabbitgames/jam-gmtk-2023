@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvvq2yxj635h3"
-path="res://.godot/imported/T_Marble-1.jpg-2ff1a07cbc2c580c4368779d64f9a433.ctex"
+path="res://.godot/imported/T_Marble-1.jpg-a3576c01395a2208167ec49b74d2a980.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/SM_Mug.fbm/T_Marble-1.jpg"
-dest_files=["res://.godot/imported/T_Marble-1.jpg-2ff1a07cbc2c580c4368779d64f9a433.ctex"]
+source_file="res://Models/SM_Mug.fbm/T_Marble-1.jpg"
+dest_files=["res://.godot/imported/T_Marble-1.jpg-a3576c01395a2208167ec49b74d2a980.ctex"]
 
 [params]
 

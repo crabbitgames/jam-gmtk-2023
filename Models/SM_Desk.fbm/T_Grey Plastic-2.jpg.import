@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b6fyitcu8u1s8"
-path="res://.godot/imported/T_Grey Plastic-2.jpg-a96b23abc5068587d2fc33255af0285b.ctex"
+path="res://.godot/imported/T_Grey Plastic-2.jpg-dcf5d98294c44adbf49174b1951e4bee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/SM_Desk.fbm/T_Grey Plastic-2.jpg"
-dest_files=["res://.godot/imported/T_Grey Plastic-2.jpg-a96b23abc5068587d2fc33255af0285b.ctex"]
+source_file="res://Models/SM_Desk.fbm/T_Grey Plastic-2.jpg"
+dest_files=["res://.godot/imported/T_Grey Plastic-2.jpg-dcf5d98294c44adbf49174b1951e4bee.ctex"]
 
 [params]
 

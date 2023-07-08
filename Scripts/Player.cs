@@ -10,7 +10,7 @@ public partial class Player : Node3D
     public NodePath userInterfaceNodePath;
 
     private int _money = 0;
-    private float _tilt = 0, _pivot = -90f;
+    private float _tilt = 0, _pivot = -90f, _fov = 45.0f;
 
     // References
     private UserInterface _userInterface;
@@ -53,12 +53,15 @@ public partial class Player : Node3D
             _noise.GetNoise3D(0, 0, t)
         ) * 0.05f;
 
-        // Rotate the camera based on the tilt.
+        // Rotate the camera based on the tilt and pivot.
         _cameraController.RotationDegrees = new(
             Mathf.Lerp(_cameraController.RotationDegrees.X, _tilt, (float)(delta * 10d)),
             Mathf.Lerp(_cameraController.RotationDegrees.Y, _pivot, (float)(delta * 7.5d)),
             0f
 		);
+
+		// Change FOV
+		_camera.Fov = Mathf.Lerp(_camera.Fov, _fov, (float)(delta * 5d));
     }
 
     public int Money
@@ -80,7 +83,8 @@ public partial class Player : Node3D
     /// <param name="direction">False = up, True = down</param>
     public void TiltCamera(bool direction)
     {
-        _tilt = direction ? -20f : 0f;
+        _tilt = direction ? -15f : 0f;
+		_fov = direction ? 35.0f : 45.0f;
     }
 
     public void PivotCamera(bool direction)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6gqp837wiikf"
-path="res://.godot/imported/T_PizzaBox_Half_Open.jpg-d0f4e3aeb1663742e9ef0e43ff376c3b.ctex"
+path="res://.godot/imported/T_PizzaBox_Half_Open.jpg-97533f379c12c59e1049efffc5c44e01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/SM_PizzaBox_HalfOpen.fbm/T_PizzaBox_Half_Open.jpg"
-dest_files=["res://.godot/imported/T_PizzaBox_Half_Open.jpg-d0f4e3aeb1663742e9ef0e43ff376c3b.ctex"]
+source_file="res://Models/SM_PizzaBox_HalfOpen.fbm/T_PizzaBox_Half_Open.jpg"
+dest_files=["res://.godot/imported/T_PizzaBox_Half_Open.jpg-97533f379c12c59e1049efffc5c44e01.ctex"]
 
 [params]
 

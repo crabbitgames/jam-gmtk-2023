@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqw7o6qdmabc2"
-path="res://.godot/imported/T_Yellow_Plastic-1.jpg-67f082744b0a4a1ee0296b46a54bc1a5.ctex"
+path="res://.godot/imported/T_Yellow_Plastic-1.jpg-3ceaa222b8696abd450eaf63411aea5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/SM_Computer_Mouse.fbm/T_Yellow_Plastic-1.jpg"
-dest_files=["res://.godot/imported/T_Yellow_Plastic-1.jpg-67f082744b0a4a1ee0296b46a54bc1a5.ctex"]
+source_file="res://Models/SM_Computer_Mouse.fbm/T_Yellow_Plastic-1.jpg"
+dest_files=["res://.godot/imported/T_Yellow_Plastic-1.jpg-3ceaa222b8696abd450eaf63411aea5a.ctex"]
 
 [params]
 

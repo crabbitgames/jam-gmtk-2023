@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c637y817egn8l"
-path.s3tc="res://.godot/imported/SM_DeskFan-ea063f88c5304e3201cbef5df470105c_T_Fan Grey.png-e4c6976b718f61df6b2323b30b30dbd7.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_DeskFan-ea063f88c5304e3201cbef5df470105c_T_Fan Grey.png-1cc86a5984e670748b4f69aa4f16466e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://models/SM_DeskFan-ea063f88c5304e3201cbef5df470105c_T_Fan Grey.png"
-dest_files=["res://.godot/imported/SM_DeskFan-ea063f88c5304e3201cbef5df470105c_T_Fan Grey.png-e4c6976b718f61df6b2323b30b30dbd7.s3tc.ctex"]
+source_file="res://Models/SM_DeskFan-ea063f88c5304e3201cbef5df470105c_T_Fan Grey.png"
+dest_files=["res://.godot/imported/SM_DeskFan-ea063f88c5304e3201cbef5df470105c_T_Fan Grey.png-1cc86a5984e670748b4f69aa4f16466e.s3tc.ctex"]
 
 [params]
 
