@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://m43dqdip5466"]
 
-[ext_resource type="PackedScene" path="res://Scenes/Prefabs/environment.tscn" id="1_037x0"]
-[ext_resource type="PackedScene" uid="uid://dhbmhcegm1wls" path="res://Scenes/Prefabs/player.tscn" id="2_h3ypy"]
+[ext_resource type="PackedScene" uid="uid://dma3xt1aa6lqf" path="res://Scenes/Prefabs/environment.tscn" id="1_037x0"]
+[ext_resource type="PackedScene" path="res://Scenes/Prefabs/player.tscn" id="2_h3ypy"]
 [ext_resource type="PackedScene" path="res://Scenes/Prefabs/money_note.tscn" id="3_o7slu"]
-[ext_resource type="PackedScene" uid="uid://dote7ehj137wm" path="res://Scenes/Prefabs/UI/user_interface.tscn" id="4_rdswo"]
+[ext_resource type="PackedScene" path="res://Scenes/Prefabs/UI/user_interface.tscn" id="4_rdswo"]
 [ext_resource type="PackedScene" path="res://Scenes/Prefabs/money_handler.tscn" id="5_u6hwv"]
 
 [node name="ATM Scene" type="Node"]
