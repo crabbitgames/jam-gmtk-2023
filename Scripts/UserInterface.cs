@@ -1,5 +1,7 @@
 using Godot;
 using System;
+using System.Numerics;
+
 
 public partial class UserInterface : Control
 {
@@ -34,7 +36,14 @@ public partial class UserInterface : Control
 				// Add new note to screen.
 				TextureRect dollar = dollarTemplate.Instantiate<TextureRect>();
 
-				
+				dollar.Position = new Godot.Vector2(
+					x: Mathf.Round((float) GD.RandRange(0d, Size.X)),
+					y: Mathf.Round((float) GD.RandRange(0d, Size.Y))
+				);
+
+				dollar.Texture = _moneyHandler.GetMoneyTexture(addAttemptAmount);
+
+				AddChild(dollar);
 				
 				// TODO remove this.
 				GD.Print(((int)addAttemptAmount).ToString() + " : " + displayedAmount.ToString());
