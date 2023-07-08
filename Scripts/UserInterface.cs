@@ -12,7 +12,8 @@ public partial class UserInterface : Control
 		moneyHandlerNodePath,
 		cashControlNodePath,
 		plasticControlNodePath,
-		downButtonNodePath;
+		downButtonNodePath,
+		rightButtonNodePath;
 
 	[Export]
 	public PackedScene dollarTemplate, creditCardTemplate;
@@ -22,10 +23,18 @@ public partial class UserInterface : Control
 		_cashControl = null,
 		_plasticControl = null;
 
-	private Button _downButton;
-	private bool _downButtonState = false;
-	public delegate void OnDownButtonHandler(bool direction);
-	public event OnDownButtonHandler OnDownButtonPressed;
+	private Button
+		_downButton,
+		_rightButton;
+
+	private bool
+		_downButtonState = false,
+		_rightButtonState = false;
+
+	public delegate void OnDirectionButtonHandler(bool direction);
+	public event OnDirectionButtonHandler
+		OnDownButtonPressed,
+		OnRightButtonPressed;
 
 	// Called on Player _Ready().
 	public void Initialise(int amount)
@@ -37,6 +46,9 @@ public partial class UserInterface : Control
 
 		_downButton ??= GetNode<Button>(downButtonNodePath);
 		_downButton.ButtonUp += OnDownButton;
+
+		_rightButton ??= GetNode<Button>(rightButtonNodePath);
+		_rightButton.ButtonUp += OnRightButton;
 
 		int maxDenomination = 4;
 
@@ -82,6 +94,15 @@ public partial class UserInterface : Control
 		_downButton.Icon = _downButtonState ? upArrow : downArrow;
 
 		OnDownButtonPressed?.Invoke(_downButtonState);
+	}
+
+	public void OnRightButton()
+	{
+		_rightButtonState = !_rightButtonState;
+
+		_rightButton.Icon = _rightButtonState ? leftArrow : rightArrow;
+
+		OnRightButtonPressed?.Invoke(_rightButtonState);
 	}
 
 	public void OnCashButton()
