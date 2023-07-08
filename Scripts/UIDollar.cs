@@ -17,7 +17,7 @@ public partial class UIDollar : TextureRect
 
 		_lastViewportPosition = new(
 			x: (float)GD.RandRange(0.01d, 0.2d),
-			y: (float)GD.RandRange(0.2d, 0.7d)
+			y: (float)GD.RandRange(0.25d, 0.75d)
 		);
 
 		MoveToLastViewportPosition();
@@ -64,8 +64,8 @@ public partial class UIDollar : TextureRect
 				);
 				if (viewportPos.X > 0.01f - halfViewportSize.X &&
 					viewportPos.X < 0.2f + halfViewportSize.X &&
-					viewportPos.Y > 0.2f - halfViewportSize.Y &&
-					viewportPos.Y < 0.7f + halfViewportSize.Y)
+					viewportPos.Y > 0.25f - halfViewportSize.Y &&
+					viewportPos.Y < 0.75f + halfViewportSize.Y)
 				{
 					_lastViewportPosition = viewportPos;
 				}

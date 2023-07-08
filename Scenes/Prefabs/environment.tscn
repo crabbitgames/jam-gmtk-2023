@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://de103fimn4kkq"]
+[gd_scene load_steps=10 format=3 uid="uid://de103fimn4kkq"]
 
 [ext_resource type="PackedScene" uid="uid://f1n0q4shhh0x" path="res://Models/SM_Office.fbx" id="1_qckmj"]
-[ext_resource type="PackedScene" uid="uid://b73kswuwc1m67" path="res://Models/SM_CharacterTest.fbx" id="2_6g7ee"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m6pob"]
 
@@ -15,7 +14,20 @@ sky = SubResource("Sky_ctjih")
 ambient_light_source = 1
 ambient_light_color = Color(0.705882, 0.713726, 0.807843, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_btiji"]
+[sub_resource type="BoxMesh" id="BoxMesh_xn7c3"]
+size = Vector3(0.422, 0.012, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n0u1i"]
+size = Vector3(0.422, 0.012, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_460i3"]
+size = Vector3(0.422, 0.012, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_echtd"]
+size = Vector3(0.422, 0.012, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_itanu"]
+size = Vector3(0.131443, 0.0358504, 0.146004)
 
 [node name="Environment" type="Node3D"]
 
@@ -49,13 +61,28 @@ omni_attenuation = 0.0346741
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_wdjhq")
 
-[node name="SM_CharacterTest" parent="." instance=ExtResource("2_6g7ee")]
-transform = Transform3D(-5.50103e-09, 0, -0.125849, 0, 0.125849, 0, 0.125849, 0, -5.50103e-09, 1.31579, -0.15067, 0.135192)
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.892935, 0.38938, 0.0109781)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.421629, 0, 0, 0, 0.0119822, 0, 0, 0, 1, 0.892935, 0.38938, 0.0109781)
-mesh = SubResource("BoxMesh_btiji")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("BoxMesh_xn7c3")
+skeleton = NodePath("../..")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
-transform = Transform3D(-1.843e-08, 0, 1, 0, 0.0119822, 0, -0.421629, 0, -4.37114e-08, 0.505328, 0.38938, 0.71048)
-mesh = SubResource("BoxMesh_btiji")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_n0u1i")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.505328, 0.38938, 0.71048)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D2"]
+shape = SubResource("BoxShape3D_460i3")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="StaticBody3D2"]
+mesh = SubResource("BoxMesh_echtd")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03562, 0.815033, -0.199828)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3"]
+shape = SubResource("BoxShape3D_itanu")

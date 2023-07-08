@@ -1,13 +1,57 @@
-[gd_scene format=3 uid="uid://dvn4bmx1o7tgl"]
+[gd_scene load_steps=4 format=3 uid="uid://dvn4bmx1o7tgl"]
+
+[ext_resource type="FontFile" uid="uid://kd6xb2y61fca" path="res://User Interface/DSEG7ClassicMini-Bold.ttf" id="1_dt7o5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pmb32"]
+line_spacing = 0.0
+font = ExtResource("1_dt7o5")
+font_size = 88
+font_color = Color(0.27451, 0, 0, 0.368627)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ga22l"]
+line_spacing = 0.0
+font = ExtResource("1_dt7o5")
+font_size = 88
+font_color = Color(1, 0, 0, 1)
 
 [node name="PinViewportUI" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 350.0
+offset_right = 300.0
 offset_bottom = 100.0
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "This is a test"
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.156863, 0.168627, 0.129412, 1)
+
+[node name="Label BG" type="Label" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "0000"
+label_settings = SubResource("LabelSettings_pmb32")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label FG" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "----"
+label_settings = SubResource("LabelSettings_ga22l")
+horizontal_alignment = 1
+vertical_alignment = 1

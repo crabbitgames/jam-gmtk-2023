@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://d13geud3famxr"]
+
+[ext_resource type="Script" path="res://Scripts/CreditCard.cs" id="1_adoed"]
+[ext_resource type="PackedScene" uid="uid://slacp0f5jnw6" path="res://Scenes/Prefabs/UI/credit_card_back_ui.tscn" id="2_cjkni"]
+[ext_resource type="PackedScene" uid="uid://cgqouoacpjl44" path="res://Scenes/Prefabs/UI/credit_card_front_ui.tscn" id="3_g4sjo"]
+[ext_resource type="ArrayMesh" uid="uid://d1o0lvb3g7f13" path="res://Models/ArrM_CreditCard.res" id="4_mru6u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_apj4o"]
+custom_solver_bias = 1.0
+size = Vector3(0.024, 0.057, 0.09)
+
+[node name="Credit Card" type="RigidBody3D"]
+transform = Transform3D(0.852312, 0.523034, 0, -0.523034, 0.852312, 0, 0, 0, 1, 0.848309, 0.781173, 0.064205)
+mass = 0.05
+gravity_scale = 0.1
+max_contacts_reported = 1
+script = ExtResource("1_adoed")
+frontVPNodePath = NodePath("CreditCardFrontViewport")
+backVPNodePath = NodePath("CreditCardBackViewport")
+meshNodePath = NodePath("SM_CreditCard")
+
+[node name="CreditCardBackViewport" type="SubViewport" parent="."]
+process_mode = 3
+disable_3d = true
+canvas_item_default_texture_filter = 0
+size = Vector2i(120, 76)
+size_2d_override = Vector2i(120, 76)
+render_target_update_mode = 4
+
+[node name="CreditCardBackUI" parent="CreditCardBackViewport" instance=ExtResource("2_cjkni")]
+
+[node name="CreditCardFrontViewport" type="SubViewport" parent="."]
+process_mode = 3
+disable_3d = true
+canvas_item_default_texture_filter = 0
+size = Vector2i(120, 76)
+size_2d_override = Vector2i(120, 76)
+render_target_update_mode = 4
+
+[node name="CreditCardFrontUI" parent="CreditCardFrontViewport" instance=ExtResource("3_g4sjo")]
+
+[node name="SM_CreditCard" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.45212e-13, -5.24537e-06, -1, -76, -5.24537e-06, 0, -3.32207e-06, 120, -4.37114e-08, 0, 0, 0)
+mesh = ExtResource("4_mru6u")
+skeleton = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 2.98023e-08, 1, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_apj4o")

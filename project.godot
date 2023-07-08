@@ -12,9 +12,20 @@ config_version=5
 
 config/name="Automatic Theft Machine"
 run/main_scene="res://Scenes/atm_scene.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
+config/features=PackedStringArray("4.1", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=480
+window/size/viewport_height=270
+window/size/mode=2
+window/stretch/mode="viewport"
 
 [dotnet]
 
 project/assembly_name="Automatic Theft Machine"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

@@ -1,7 +1,28 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bm2d2lvvs2n7g"]
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://bm2d2lvvs2n7g"]
 
 [ext_resource type="FontFile" uid="uid://dsh5iaj4bs1ka" path="res://User Interface/Itim-Regular.ttf" id="1_w2pxy"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xktpn"]
+bg_color = Color(0, 0, 0, 0.196078)
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 0.392157)
+corner_detail = 1
+shadow_color = Color(0.0784314, 0.0784314, 0.0784314, 0.6)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_77wgh"]
+bg_color = Color(0, 0, 0, 0.392157)
+border_color = Color(0, 0, 0, 0.392157)
+corner_detail = 1
+shadow_color = Color(0.0784314, 0.0784314, 0.0784314, 0.6)
+anti_aliasing = false
+
 [resource]
 default_font = ExtResource("1_w2pxy")
-default_font_size = 24
+default_font_size = 16
+Button/styles/disabled = SubResource("StyleBoxFlat_xktpn")
+Button/styles/focus = SubResource("StyleBoxFlat_xktpn")
+Button/styles/hover = SubResource("StyleBoxFlat_xktpn")
+Button/styles/normal = SubResource("StyleBoxFlat_xktpn")
+Button/styles/pressed = SubResource("StyleBoxFlat_77wgh")

@@ -5,17 +5,27 @@ using System;
 public partial class UserInterface : Control
 {
 	[Export]
-	public NodePath moneyHandlerNodePath;
+	public Texture2D upArrow, rightArrow, downArrow, leftArrow;
+
+	[Export]
+	public NodePath moneyHandlerNodePath, downButtonNodePath;
 
 	[Export]
 	public PackedScene dollarTemplate;
 
+	public delegate void OnDownButtonHandler(bool direction);
+	public event OnDownButtonHandler OnDownButtonPressed;
+
 	private MoneyHandler _moneyHandler = null;
+	private Button _downButton;
+	private bool _downButtonState = false;
 
 	// Called on Player _Ready().
 	public void Initialise(int amount)
 	{
 		_moneyHandler ??= GetNode<MoneyHandler>(moneyHandlerNodePath);
+		_downButton ??= GetNode<Button>(downButtonNodePath);
+		_downButton.ButtonUp += OnDownButton;
 
 		int maxDenomination = 4;
 
@@ -48,13 +58,16 @@ public partial class UserInterface : Control
 		}
 	}
 
-	// Called when the node enters the scene tree for the first time.
-	public override void _Ready()
-	{
-	}
-
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+	}
+
+	public void OnDownButton() {
+		_downButtonState = !_downButtonState;
+
+		_downButton.Icon = _downButtonState ? upArrow : downArrow;
+
+		OnDownButtonPressed?.Invoke(_downButtonState);
 	}
 }

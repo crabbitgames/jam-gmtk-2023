@@ -1,17 +1,25 @@
-[gd_scene load_steps=5 format=3 uid="uid://m43dqdip5466"]
+[gd_scene load_steps=7 format=3 uid="uid://m43dqdip5466"]
 
 [ext_resource type="PackedScene" uid="uid://de103fimn4kkq" path="res://Scenes/Prefabs/environment.tscn" id="1_037x0"]
 [ext_resource type="PackedScene" uid="uid://dhbmhcegm1wls" path="res://Scenes/Prefabs/player.tscn" id="2_h3ypy"]
 [ext_resource type="PackedScene" uid="uid://dote7ehj137wm" path="res://Scenes/Prefabs/UI/user_interface.tscn" id="4_rdswo"]
-[ext_resource type="PackedScene" path="res://Scenes/Prefabs/money_handler.tscn" id="5_u6hwv"]
+[ext_resource type="PackedScene" uid="uid://bbxg81cmjqf3h" path="res://Scenes/Prefabs/money_handler.tscn" id="5_u6hwv"]
+[ext_resource type="PackedScene" uid="uid://6ktp0578lsy5" path="res://Scenes/Prefabs/dynamic_environment.tscn" id="5_xkxia"]
+[ext_resource type="PackedScene" uid="uid://d13geud3famxr" path="res://Scenes/Prefabs/Objects/credit_card.tscn" id="6_qejub"]
 
 [node name="ATM Scene" type="Node"]
 
 [node name="Environment" parent="." instance=ExtResource("1_037x0")]
 
 [node name="Player" parent="." instance=ExtResource("2_h3ypy")]
+startMoney = 100
 
 [node name="UserInterface" parent="." instance=ExtResource("4_rdswo")]
 moneyHandlerNodePath = NodePath("../MoneyHandler")
 
 [node name="MoneyHandler" parent="." instance=ExtResource("5_u6hwv")]
+
+[node name="DynamicEnvironment" parent="." instance=ExtResource("5_xkxia")]
+
+[node name="Credit Card" parent="." instance=ExtResource("6_qejub")]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0.929757, 0.867824, -0.199117)
