@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dote7ehj137wm"]
+[gd_scene load_steps=10 format=3 uid="uid://dote7ehj137wm"]
 
 [ext_resource type="Script" path="res://Scripts/UserInterface.cs" id="1_int6i"]
 [ext_resource type="Texture2D" uid="uid://cbk85devm1by1" path="res://Textures/T_UI_UpArrow.png" id="2_sxm0v"]
@@ -7,6 +7,12 @@
 [ext_resource type="Theme" uid="uid://bm2d2lvvs2n7g" path="res://User Interface/UI.tres" id="3_7gl4f"]
 [ext_resource type="Texture2D" uid="uid://dbkichskqh6fr" path="res://Textures/T_UI_DownArrow.png" id="4_lnrxf"]
 [ext_resource type="Texture2D" uid="uid://cgqru7bat8tut" path="res://Textures/T_UI_LeftArrow.png" id="5_mjagj"]
+[ext_resource type="PackedScene" uid="uid://x5th4kl4urdj" path="res://Scenes/Prefabs/UI/creditcard_template.tscn" id="7_scpnv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tb0ts"]
+line_spacing = 0.0
+font_size = 31
+font_color = Color(0, 0, 0, 0.392157)
 
 [node name="UserInterface" type="Control"]
 layout_mode = 3
@@ -15,6 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_int6i")
 upArrow = ExtResource("2_sxm0v")
 rightArrow = ExtResource("3_6eonk")
@@ -24,6 +31,7 @@ cashControlNodePath = NodePath("Cash Control")
 plasticControlNodePath = NodePath("Plastic Control")
 downButtonNodePath = NodePath("DownButton")
 dollarTemplate = ExtResource("2_x8pae")
+creditCardTemplate = ExtResource("7_scpnv")
 
 [node name="Money Heading" type="Label" parent="."]
 layout_mode = 0
@@ -166,7 +174,27 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="Label" type="Label" parent="Cash Control"]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 12.0
+offset_top = 52.0
+offset_right = 114.0
+offset_bottom = 128.0
+grow_vertical = 2
+rotation = -1.5708
+theme = ExtResource("3_7gl4f")
+text = "CA$H
+MONEY"
+label_settings = SubResource("LabelSettings_tb0ts")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Plastic Control" type="Control" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -174,6 +202,24 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+
+[node name="Label" type="Label" parent="Plastic Control"]
+z_index = -1
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 12.0
+offset_top = 52.0
+offset_right = 114.0
+offset_bottom = 128.0
+grow_vertical = 2
+rotation = -1.5708
+theme = ExtResource("3_7gl4f")
+text = "CARD$"
+label_settings = SubResource("LabelSettings_tb0ts")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="button_up" from="ColorRect/HBoxContainer/CashButton" to="." method="OnCashButton"]
 [connection signal="button_up" from="ColorRect/HBoxContainer/CardButton" to="." method="OnPlasticButton"]

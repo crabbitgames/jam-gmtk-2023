@@ -12,7 +12,7 @@
 [node name="Environment" parent="." instance=ExtResource("1_037x0")]
 
 [node name="Player" parent="." instance=ExtResource("2_h3ypy")]
-startMoney = 100
+startMoney = 125
 
 [node name="UserInterface" parent="." instance=ExtResource("4_rdswo")]
 moneyHandlerNodePath = NodePath("../MoneyHandler")
@@ -22,4 +22,4 @@ moneyHandlerNodePath = NodePath("../MoneyHandler")
 [node name="DynamicEnvironment" parent="." instance=ExtResource("5_xkxia")]
 
 [node name="Credit Card" parent="." instance=ExtResource("6_qejub")]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0.929757, 0.867824, -0.199117)
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0.926998, 0.867824, -0.199117)

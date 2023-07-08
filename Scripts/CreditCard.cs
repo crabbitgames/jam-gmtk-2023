@@ -1,35 +1,60 @@
 using Godot;
 using System;
 
-public partial class CreditCard : Node3D
+public partial class CreditCard : RigidBody3D
 {
-	[Export]
-	public NodePath frontVPNodePath, backVPNodePath, meshNodePath;
+    [Export]
+    public NodePath frontVPNodePath, backVPNodePath, meshNodePath;
 
-	// Called when the node enters the scene tree for the first time.
-	public override void _Ready()
-	{
-		RenderingServer.FramePostDraw += OnFramePostDraw;
-	}
+    private ViewportTexture _frontVPTexture;
 
-	public void OnFramePostDraw()
-	{
-		SubViewport frontVP = GetNode<SubViewport>(frontVPNodePath);
-		SubViewport backVP = GetNode<SubViewport>(backVPNodePath);
+    public ViewportTexture ViewportTexture {
+        get {
+            return _frontVPTexture;
+        }
+    }
 
-		MeshInstance3D mesh = GetNode<MeshInstance3D>(meshNodePath);
+    // Called when the node enters the scene tree for the first time.
+    public override void _Ready()
+    {
+        RenderingServer.FramePostDraw += OnFramePostDraw;
+    }
 
-		mesh.SetSurfaceOverrideMaterial(0, CreateViewportMaterial(frontVP.GetTexture()));
-		mesh.SetSurfaceOverrideMaterial(1, CreateViewportMaterial(backVP.GetTexture()));
+    public void OnFramePostDraw()
+    {
+        SubViewport frontVP = GetNode<SubViewport>(frontVPNodePath);
+        _frontVPTexture = frontVP.GetTexture();
 
-		RenderingServer.FramePostDraw -= OnFramePostDraw;
-	}
+        SubViewport backVP = GetNode<SubViewport>(backVPNodePath);
 
-	private StandardMaterial3D CreateViewportMaterial(ViewportTexture viewportTexture)
-	{
-		return new() {
-			ShadingMode = BaseMaterial3D.ShadingModeEnum.Unshaded,
-			AlbedoTexture = viewportTexture
-		};
-	}
+        MeshInstance3D mesh = GetNode<MeshInstance3D>(meshNodePath);
+
+        mesh.SetSurfaceOverrideMaterial(0, CreateViewportMaterial(_frontVPTexture));
+        mesh.SetSurfaceOverrideMaterial(1, CreateViewportMaterial(backVP.GetTexture()));
+
+        RenderingServer.FramePostDraw -= OnFramePostDraw;
+    }
+
+    private StandardMaterial3D CreateViewportMaterial(ViewportTexture viewportTexture)
+    {
+        return new()
+        {
+            ShadingMode = BaseMaterial3D.ShadingModeEnum.Unshaded,
+            AlbedoTexture = viewportTexture
+        };
+    }
+
+    public override void _InputEvent(Camera3D camera, InputEvent @event, Vector3 position, Vector3 normal, int shapeIdx)
+    {
+        if (@event is InputEventMouseButton mouseButton)
+        {
+            if (mouseButton.ButtonIndex == MouseButton.Left)
+            {
+                if (mouseButton.Pressed)
+                {
+                    GetTree().Root.GetNode<UserInterface>("ATM Scene/UserInterface").SpawnCreditCard(this);
+                }
+            }
+        }
+    }
 }

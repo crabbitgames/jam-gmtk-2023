@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://x5th4kl4urdj"]
+
+[ext_resource type="Texture2D" uid="uid://c5xhts4p6hjk" path="res://Textures/T_CreditCard_Front.png" id="1_rymfr"]
+[ext_resource type="Script" path="res://Scripts/UICreditCard.cs" id="2_5tmli"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1dwxv"]
+
+[sub_resource type="Theme" id="Theme_flved"]
+
+[node name="Credit Card Template" type="TextureRect"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_1dwxv")
+custom_minimum_size = Vector2(50, 32)
+offset_right = 30.0
+offset_bottom = 15.0
+pivot_offset = Vector2(24, 12)
+mouse_filter = 0
+theme = SubResource("Theme_flved")
+texture = ExtResource("1_rymfr")
+expand_mode = 1
+stretch_mode = 4
+script = ExtResource("2_5tmli")

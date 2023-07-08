@@ -15,7 +15,7 @@ public partial class UserInterface : Control
 		downButtonNodePath;
 
 	[Export]
-	public PackedScene dollarTemplate;
+	public PackedScene dollarTemplate, creditCardTemplate;
 
 	private MoneyHandler _moneyHandler = null;
 	private Control
@@ -94,5 +94,20 @@ public partial class UserInterface : Control
 	{
 		_cashControl.Hide();
 		_plasticControl.Show();
+	}
+
+	// Spawns a credit card on the UI and removes the physical credit card from the world.
+	public void SpawnCreditCard(CreditCard creditCard) {
+		// Switch to the plastic view.
+		OnPlasticButton();
+
+		// Spawn the UI credit card.
+		UICreditCard uiCreditCard = creditCardTemplate.Instantiate<UICreditCard>();
+		uiCreditCard.Initialise(creditCard.ViewportTexture);
+
+		_plasticControl.AddChild(uiCreditCard);
+
+		// Delete the credit card.
+		creditCard.QueueFree();
 	}
 }
