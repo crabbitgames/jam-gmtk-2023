@@ -1,6 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://de103fimn4kkq"]
+[gd_scene load_steps=22 format=3 uid="uid://de103fimn4kkq"]
 
-[ext_resource type="PackedScene" uid="uid://f1n0q4shhh0x" path="res://Models/SM_Office.fbx" id="1_qckmj"]
+[ext_resource type="PackedScene" uid="uid://f1n0q4shhh0x" path="res://models/SM_Office.fbx" id="1_qckmj"]
+[ext_resource type="PackedScene" uid="uid://c10nusbqs0ivx" path="res://Models/SM_Computer_Screen.fbx" id="2_6km8b"]
+[ext_resource type="PackedScene" uid="uid://c5cpb2ff62q35" path="res://Models/SM_Desk.fbx" id="3_nsamc"]
+[ext_resource type="PackedScene" uid="uid://oeriqulqlh2l" path="res://Models/SM_DeskFan.fbx" id="4_dnuqd"]
+[ext_resource type="PackedScene" uid="uid://drbqjr6g75pdn" path="res://Models/SM_Computer_Keyboard.fbx" id="5_25vik"]
+[ext_resource type="PackedScene" uid="uid://bwouc6jsowxmf" path="res://Models/SM_Computer_Mouse.fbx" id="6_f3exm"]
+[ext_resource type="PackedScene" uid="uid://cbsfy7lq30p7w" path="res://Models/SM_PizzaBox_Closed.fbx" id="7_ltbrr"]
+[ext_resource type="PackedScene" uid="uid://ofs37o8m3hp3" path="res://Models/SM_PizzaBox_HalfOpen.fbx" id="8_fcuci"]
+[ext_resource type="PackedScene" uid="uid://cwfyr2fdiix6l" path="res://Models/SM_PizzaBox_Open.fbx" id="9_h1gmr"]
+[ext_resource type="PackedScene" uid="uid://b7ln8d1vfipmr" path="res://Models/SM_PizzaSlice.fbx" id="10_88c4u"]
+[ext_resource type="PackedScene" uid="uid://ckrop57m58iro" path="res://Models/SM_Mug.fbx" id="11_vuoyh"]
+[ext_resource type="PackedScene" uid="uid://dy2yt8pfwjl0f" path="res://Models/SM_Computer.fbx" id="12_x5e0q"]
+[ext_resource type="PackedScene" uid="uid://btsmdexx7p62q" path="res://Models/SM_Pencil.fbx" id="13_n3wd1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m6pob"]
 
@@ -86,3 +98,42 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.03562, 0.815033, -0.199828)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D3"]
 shape = SubResource("BoxShape3D_itanu")
+
+[node name="SM_Computer_Screen" parent="." instance=ExtResource("2_6km8b")]
+transform = Transform3D(-1.0885, 4.63609e-05, -0.158665, 6.67138e-06, 1.1, 0.000275645, 0.158665, 0.0002718, -1.0885, 0.603644, 0.514914, 0.859055)
+
+[node name="SM_Desk" parent="." instance=ExtResource("3_nsamc")]
+transform = Transform3D(-6.21388e-08, 0, -1.27782, 0, 1.2, 0, 1.42157, 0, -5.58552e-08, -0.183237, 0, 0.561964)
+
+[node name="SM_DeskFan" parent="." instance=ExtResource("4_dnuqd")]
+transform = Transform3D(-0.928719, 0, 0.370784, 0, 1, 0, -0.370784, 0, -0.928719, 0.176732, 0.440532, 0.906427)
+
+[node name="SM_Computer_Keyboard" parent="." instance=ExtResource("5_25vik")]
+transform = Transform3D(-0.996433, 0, 0.0843909, 0, 1, 0, -0.0843909, 0, -0.996433, 0.536397, 0.448398, 0.595964)
+
+[node name="SM_Computer_Mouse" parent="." instance=ExtResource("6_f3exm")]
+transform = Transform3D(-0.987729, 0, -0.48414, 0, 1.1, 0, 0.48414, 0, -0.987729, 0.325224, 0.438611, 0.680037)
+
+[node name="SM_PizzaBox_Closed" parent="." instance=ExtResource("7_ltbrr")]
+transform = Transform3D(0.787005, 0, 0.436603, 0, 0.9, 0, -0.436603, 0, 0.787005, 0.832598, 0.439155, -0.345652)
+
+[node name="SM_PizzaBox_HalfOpen" parent="." instance=ExtResource("8_fcuci")]
+transform = Transform3D(0.281653, 0, -0.854793, 0, 0.9, 0, 0.854793, 0, 0.281653, 0.835492, 0.464555, -0.359376)
+
+[node name="SM_PizzaBox_Open" parent="." instance=ExtResource("9_h1gmr")]
+transform = Transform3D(-0.83538, 0, 0.334873, 0, 0.9, 0, -0.334873, 0, -0.83538, -0.0461506, 0.441813, 0.824875)
+
+[node name="SM_PizzaSlice" parent="." instance=ExtResource("10_88c4u")]
+transform = Transform3D(-0.402309, 0, 0.805076, 0, 0.9, 0, -0.805076, 0, -0.402309, -0.0746258, 0.443303, 0.820538)
+
+[node name="SM_PizzaSlice2" parent="." instance=ExtResource("10_88c4u")]
+transform = Transform3D(-0.817414, 0, -0.376608, 0, 0.9, 0, 0.376608, 0, -0.817414, -0.0227936, 0.44268, 0.837997)
+
+[node name="SM_Mug" parent="." instance=ExtResource("11_vuoyh")]
+transform = Transform3D(-0.984892, 0, 0.173167, 0, 1, 0, -0.173167, 0, -0.984892, 0.0575629, 0.433887, 0.6047)
+
+[node name="SM_Computer" parent="." instance=ExtResource("12_x5e0q")]
+transform = Transform3D(-0.990875, 0, -0.134782, 0, 1, 0, 0.134782, 0, -0.990875, 0.885585, 0.438454, 0.851618)
+
+[node name="SM_Pencil" parent="." instance=ExtResource("13_n3wd1")]
+transform = Transform3D(-0.449948, -0.00269602, -0.893051, -0.00417058, 0.999991, -0.000917605, 0.893045, 0.00331168, -0.449955, 0.885951, 0.442842, 0.623045)
