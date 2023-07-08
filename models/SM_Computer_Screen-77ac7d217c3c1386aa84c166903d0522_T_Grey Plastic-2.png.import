@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpf4fofod0640"
-path.s3tc="res://.godot/imported/SM_Computer_Screen-77ac7d217c3c1386aa84c166903d0522_T_Grey Plastic-2.png-7c9fd6beae834c69ee945c76cfdca2bc.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_Computer_Screen-77ac7d217c3c1386aa84c166903d0522_T_Grey Plastic-2.png-1d0641b461b9b31579d730593b7efa28.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/SM_Computer_Screen-77ac7d217c3c1386aa84c166903d0522_T_Grey Plastic-2.png"
-dest_files=["res://.godot/imported/SM_Computer_Screen-77ac7d217c3c1386aa84c166903d0522_T_Grey Plastic-2.png-7c9fd6beae834c69ee945c76cfdca2bc.s3tc.ctex"]
+source_file="res://models/SM_Computer_Screen-77ac7d217c3c1386aa84c166903d0522_T_Grey Plastic-2.png"
+dest_files=["res://.godot/imported/SM_Computer_Screen-77ac7d217c3c1386aa84c166903d0522_T_Grey Plastic-2.png-1d0641b461b9b31579d730593b7efa28.s3tc.ctex"]
 
 [params]
 

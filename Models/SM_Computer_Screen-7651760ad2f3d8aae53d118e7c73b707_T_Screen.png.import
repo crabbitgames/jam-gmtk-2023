@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dl06ns1kwe7uj"
-path.s3tc="res://.godot/imported/SM_Computer_Screen-7651760ad2f3d8aae53d118e7c73b707_T_Screen.png-7dc849ef06890430b5f1ac714fe6ad77.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_Computer_Screen-7651760ad2f3d8aae53d118e7c73b707_T_Screen.png-b07e0e53f0075efd89a021197d399268.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/SM_Computer_Screen-7651760ad2f3d8aae53d118e7c73b707_T_Screen.png"
-dest_files=["res://.godot/imported/SM_Computer_Screen-7651760ad2f3d8aae53d118e7c73b707_T_Screen.png-7dc849ef06890430b5f1ac714fe6ad77.s3tc.ctex"]
+source_file="res://models/SM_Computer_Screen-7651760ad2f3d8aae53d118e7c73b707_T_Screen.png"
+dest_files=["res://.godot/imported/SM_Computer_Screen-7651760ad2f3d8aae53d118e7c73b707_T_Screen.png-b07e0e53f0075efd89a021197d399268.s3tc.ctex"]
 
 [params]
 

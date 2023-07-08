@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b7ln8d1vfipmr"
-path="res://.godot/imported/SM_PizzaSlice.fbx-b39c1d326870bffbc551a181047b8042.scn"
+path="res://.godot/imported/SM_PizzaSlice.fbx-027c5f4d4ecd86f117b07060a26c6f95.scn"
 
 [deps]
 
-source_file="res://Models/SM_PizzaSlice.fbx"
-dest_files=["res://.godot/imported/SM_PizzaSlice.fbx-b39c1d326870bffbc551a181047b8042.scn"]
+source_file="res://models/SM_PizzaSlice.fbx"
+dest_files=["res://.godot/imported/SM_PizzaSlice.fbx-027c5f4d4ecd86f117b07060a26c6f95.scn"]
 
 [params]
 

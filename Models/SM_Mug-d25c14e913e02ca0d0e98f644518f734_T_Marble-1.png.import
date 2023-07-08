@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://blxmkm0gd21my"
-path.s3tc="res://.godot/imported/SM_Mug-d25c14e913e02ca0d0e98f644518f734_T_Marble-1.png-bc9acd4a61d94a837532138ccf18345d.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_Mug-d25c14e913e02ca0d0e98f644518f734_T_Marble-1.png-bbf25dce76065fe4f0dea9edf412ac36.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/SM_Mug-d25c14e913e02ca0d0e98f644518f734_T_Marble-1.png"
-dest_files=["res://.godot/imported/SM_Mug-d25c14e913e02ca0d0e98f644518f734_T_Marble-1.png-bc9acd4a61d94a837532138ccf18345d.s3tc.ctex"]
+source_file="res://models/SM_Mug-d25c14e913e02ca0d0e98f644518f734_T_Marble-1.png"
+dest_files=["res://.godot/imported/SM_Mug-d25c14e913e02ca0d0e98f644518f734_T_Marble-1.png-bbf25dce76065fe4f0dea9edf412ac36.s3tc.ctex"]
 
 [params]
 

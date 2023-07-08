@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yf0r0uqp4l1n"
-path.s3tc="res://.godot/imported/SM_Pencil-8f5a03f137ac881e40cd08650db6207b_T_Brown.png-671058d15e23df6b0c323457ed2926c1.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_Pencil-8f5a03f137ac881e40cd08650db6207b_T_Brown.png-acfb5f70eb27ae2bea51e8a868f121a5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/SM_Pencil-8f5a03f137ac881e40cd08650db6207b_T_Brown.png"
-dest_files=["res://.godot/imported/SM_Pencil-8f5a03f137ac881e40cd08650db6207b_T_Brown.png-671058d15e23df6b0c323457ed2926c1.s3tc.ctex"]
+source_file="res://models/SM_Pencil-8f5a03f137ac881e40cd08650db6207b_T_Brown.png"
+dest_files=["res://.godot/imported/SM_Pencil-8f5a03f137ac881e40cd08650db6207b_T_Brown.png-acfb5f70eb27ae2bea51e8a868f121a5.s3tc.ctex"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c10nusbqs0ivx"
-path="res://.godot/imported/SM_Computer_Screen.fbx-77ac7d217c3c1386aa84c166903d0522.scn"
+path="res://.godot/imported/SM_Computer_Screen.fbx-7651760ad2f3d8aae53d118e7c73b707.scn"
 
 [deps]
 
-source_file="res://Models/SM_Computer_Screen.fbx"
-dest_files=["res://.godot/imported/SM_Computer_Screen.fbx-77ac7d217c3c1386aa84c166903d0522.scn"]
+source_file="res://models/SM_Computer_Screen.fbx"
+dest_files=["res://.godot/imported/SM_Computer_Screen.fbx-7651760ad2f3d8aae53d118e7c73b707.scn"]
 
 [params]
 

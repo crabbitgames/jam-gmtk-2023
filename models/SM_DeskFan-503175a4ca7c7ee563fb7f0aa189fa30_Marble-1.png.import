@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buakwmbnutagv"
-path.s3tc="res://.godot/imported/SM_DeskFan-503175a4ca7c7ee563fb7f0aa189fa30_Marble-1.png-dc8cd5ffacbde64bf9cf712dd4c52fde.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_DeskFan-503175a4ca7c7ee563fb7f0aa189fa30_Marble-1.png-e0218f62c57c5a621922b25f4e8d2097.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/SM_DeskFan-503175a4ca7c7ee563fb7f0aa189fa30_Marble-1.png"
-dest_files=["res://.godot/imported/SM_DeskFan-503175a4ca7c7ee563fb7f0aa189fa30_Marble-1.png-dc8cd5ffacbde64bf9cf712dd4c52fde.s3tc.ctex"]
+source_file="res://models/SM_DeskFan-503175a4ca7c7ee563fb7f0aa189fa30_Marble-1.png"
+dest_files=["res://.godot/imported/SM_DeskFan-503175a4ca7c7ee563fb7f0aa189fa30_Marble-1.png-e0218f62c57c5a621922b25f4e8d2097.s3tc.ctex"]
 
 [params]
 

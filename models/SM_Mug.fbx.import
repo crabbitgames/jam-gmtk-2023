@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ckrop57m58iro"
-path="res://.godot/imported/SM_Mug.fbx-2cab2cc5c9069e22b332079b5491448c.scn"
+path="res://.godot/imported/SM_Mug.fbx-d25c14e913e02ca0d0e98f644518f734.scn"
 
 [deps]
 
-source_file="res://Models/SM_Mug.fbx"
-dest_files=["res://.godot/imported/SM_Mug.fbx-2cab2cc5c9069e22b332079b5491448c.scn"]
+source_file="res://models/SM_Mug.fbx"
+dest_files=["res://.godot/imported/SM_Mug.fbx-d25c14e913e02ca0d0e98f644518f734.scn"]
 
 [params]
 

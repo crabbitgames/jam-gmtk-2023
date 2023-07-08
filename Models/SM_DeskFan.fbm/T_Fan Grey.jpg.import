@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ojhj8uqrntvw"
-path="res://.godot/imported/T_Fan Grey.jpg-e129a60cc7d81772656aca32a923db7b.ctex"
+path="res://.godot/imported/T_Fan Grey.jpg-e2a7fa44c0f37566198c285b5268a1b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Models/SM_DeskFan.fbm/T_Fan Grey.jpg"
-dest_files=["res://.godot/imported/T_Fan Grey.jpg-e129a60cc7d81772656aca32a923db7b.ctex"]
+source_file="res://models/SM_DeskFan.fbm/T_Fan Grey.jpg"
+dest_files=["res://.godot/imported/T_Fan Grey.jpg-e2a7fa44c0f37566198c285b5268a1b3.ctex"]
 
 [params]
 

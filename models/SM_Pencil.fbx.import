@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://btsmdexx7p62q"
-path="res://.godot/imported/SM_Pencil.fbx-4b0caffd948454df165a18d5f5759332.scn"
+path="res://.godot/imported/SM_Pencil.fbx-8f5a03f137ac881e40cd08650db6207b.scn"
 
 [deps]
 
-source_file="res://Models/SM_Pencil.fbx"
-dest_files=["res://.godot/imported/SM_Pencil.fbx-4b0caffd948454df165a18d5f5759332.scn"]
+source_file="res://models/SM_Pencil.fbx"
+dest_files=["res://.godot/imported/SM_Pencil.fbx-8f5a03f137ac881e40cd08650db6207b.scn"]
 
 [params]
 

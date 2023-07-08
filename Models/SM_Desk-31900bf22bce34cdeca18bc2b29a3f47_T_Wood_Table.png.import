@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djgkv1cmpjxaw"
-path.s3tc="res://.godot/imported/SM_Desk-31900bf22bce34cdeca18bc2b29a3f47_T_Wood_Table.png-a4534a4032bf3b9d7fb784eef5aec9f1.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_Desk-31900bf22bce34cdeca18bc2b29a3f47_T_Wood_Table.png-b404de8fc8a99442247a51a90635bcca.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/SM_Desk-31900bf22bce34cdeca18bc2b29a3f47_T_Wood_Table.png"
-dest_files=["res://.godot/imported/SM_Desk-31900bf22bce34cdeca18bc2b29a3f47_T_Wood_Table.png-a4534a4032bf3b9d7fb784eef5aec9f1.s3tc.ctex"]
+source_file="res://models/SM_Desk-31900bf22bce34cdeca18bc2b29a3f47_T_Wood_Table.png"
+dest_files=["res://.godot/imported/SM_Desk-31900bf22bce34cdeca18bc2b29a3f47_T_Wood_Table.png-b404de8fc8a99442247a51a90635bcca.s3tc.ctex"]
 
 [params]
 

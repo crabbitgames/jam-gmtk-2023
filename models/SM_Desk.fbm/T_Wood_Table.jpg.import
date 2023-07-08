@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bb26a2oq14m4l"
-path="res://.godot/imported/T_Wood_Table.jpg-6843f238c99dc420520b1b260af7e5b5.ctex"
+path="res://.godot/imported/T_Wood_Table.jpg-c3c1990ef775673e6cf626005972e292.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Models/SM_Desk.fbm/T_Wood_Table.jpg"
-dest_files=["res://.godot/imported/T_Wood_Table.jpg-6843f238c99dc420520b1b260af7e5b5.ctex"]
+source_file="res://models/SM_Desk.fbm/T_Wood_Table.jpg"
+dest_files=["res://.godot/imported/T_Wood_Table.jpg-c3c1990ef775673e6cf626005972e292.ctex"]
 
 [params]
 

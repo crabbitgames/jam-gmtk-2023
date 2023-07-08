@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bxv8jyodf7s76"
-path.s3tc="res://.godot/imported/SM_Computer_Keyboard-c099453a86fe3a7b3e025f12cfdb0b65_T_Yellow_Plastic-1.png-55c85142f0de1e215f4cc63afe06a5f5.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_Computer_Keyboard-c099453a86fe3a7b3e025f12cfdb0b65_T_Yellow_Plastic-1.png-161095401ce8d8893ffefee885398949.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/SM_Computer_Keyboard-c099453a86fe3a7b3e025f12cfdb0b65_T_Yellow_Plastic-1.png"
-dest_files=["res://.godot/imported/SM_Computer_Keyboard-c099453a86fe3a7b3e025f12cfdb0b65_T_Yellow_Plastic-1.png-55c85142f0de1e215f4cc63afe06a5f5.s3tc.ctex"]
+source_file="res://models/SM_Computer_Keyboard-c099453a86fe3a7b3e025f12cfdb0b65_T_Yellow_Plastic-1.png"
+dest_files=["res://.godot/imported/SM_Computer_Keyboard-c099453a86fe3a7b3e025f12cfdb0b65_T_Yellow_Plastic-1.png-161095401ce8d8893ffefee885398949.s3tc.ctex"]
 
 [params]
 

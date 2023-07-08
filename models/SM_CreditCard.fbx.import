@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ec44twq521rd"
-path="res://.godot/imported/SM_CreditCard.fbx-bbcb24486530578ff13365e295e1dd02.scn"
+path="res://.godot/imported/SM_CreditCard.fbx-4e577cc757689e731778482fa17e4f93.scn"
 
 [deps]
 
-source_file="res://Models/SM_CreditCard.fbx"
-dest_files=["res://.godot/imported/SM_CreditCard.fbx-bbcb24486530578ff13365e295e1dd02.scn"]
+source_file="res://models/SM_CreditCard.fbx"
+dest_files=["res://.godot/imported/SM_CreditCard.fbx-4e577cc757689e731778482fa17e4f93.scn"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds5j1xrv0um5q"
-path.s3tc="res://.godot/imported/SM_Computer_Keyboard-576c562b39691d3468640c954a8cc0a4_T_White-Plastic-1.png-e3ce456ed46011408685f728a4049a03.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_Computer_Keyboard-576c562b39691d3468640c954a8cc0a4_T_White-Plastic-1.png-243470ff02cc0cc5baa917cf947ab8ff.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/SM_Computer_Keyboard-576c562b39691d3468640c954a8cc0a4_T_White-Plastic-1.png"
-dest_files=["res://.godot/imported/SM_Computer_Keyboard-576c562b39691d3468640c954a8cc0a4_T_White-Plastic-1.png-e3ce456ed46011408685f728a4049a03.s3tc.ctex"]
+source_file="res://models/SM_Computer_Keyboard-576c562b39691d3468640c954a8cc0a4_T_White-Plastic-1.png"
+dest_files=["res://.godot/imported/SM_Computer_Keyboard-576c562b39691d3468640c954a8cc0a4_T_White-Plastic-1.png-243470ff02cc0cc5baa917cf947ab8ff.s3tc.ctex"]
 
 [params]
 

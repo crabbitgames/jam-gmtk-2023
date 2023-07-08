@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bunk7kp5uibfl"
-path.s3tc="res://.godot/imported/SM_Computer-07ccd2ac2e7620c526338bbc2be3d60c_T_Yellow_Plastic-1.png-5a333644416bf6fd41454d353779a011.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_Computer-07ccd2ac2e7620c526338bbc2be3d60c_T_Yellow_Plastic-1.png-6ab3782013784438dee13a421f10005a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/SM_Computer-07ccd2ac2e7620c526338bbc2be3d60c_T_Yellow_Plastic-1.png"
-dest_files=["res://.godot/imported/SM_Computer-07ccd2ac2e7620c526338bbc2be3d60c_T_Yellow_Plastic-1.png-5a333644416bf6fd41454d353779a011.s3tc.ctex"]
+source_file="res://models/SM_Computer-07ccd2ac2e7620c526338bbc2be3d60c_T_Yellow_Plastic-1.png"
+dest_files=["res://.godot/imported/SM_Computer-07ccd2ac2e7620c526338bbc2be3d60c_T_Yellow_Plastic-1.png-6ab3782013784438dee13a421f10005a.s3tc.ctex"]
 
 [params]
 

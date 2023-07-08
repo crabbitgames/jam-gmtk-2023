@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://buebwu3ey0imd"
-path.s3tc="res://.godot/imported/SM_Computer_Mouse-696b2816dd99f500e37215bc2ffc88a9_T_Screen.png-601a2fed57757d7c80c4821ae90e73dc.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_Computer_Mouse-696b2816dd99f500e37215bc2ffc88a9_T_Screen.png-9a231d779c3a25ed347cca08a72499f3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/SM_Computer_Mouse-696b2816dd99f500e37215bc2ffc88a9_T_Screen.png"
-dest_files=["res://.godot/imported/SM_Computer_Mouse-696b2816dd99f500e37215bc2ffc88a9_T_Screen.png-601a2fed57757d7c80c4821ae90e73dc.s3tc.ctex"]
+source_file="res://models/SM_Computer_Mouse-696b2816dd99f500e37215bc2ffc88a9_T_Screen.png"
+dest_files=["res://.godot/imported/SM_Computer_Mouse-696b2816dd99f500e37215bc2ffc88a9_T_Screen.png-9a231d779c3a25ed347cca08a72499f3.s3tc.ctex"]
 
 [params]
 

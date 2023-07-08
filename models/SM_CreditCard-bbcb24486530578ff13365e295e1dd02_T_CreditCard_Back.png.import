@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dv4syd7x5hvau"
-path.s3tc="res://.godot/imported/SM_CreditCard-bbcb24486530578ff13365e295e1dd02_T_CreditCard_Back.png-1d4a4407e97231d0547c62afd2f74d34.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_CreditCard-bbcb24486530578ff13365e295e1dd02_T_CreditCard_Back.png-068bbb5ac7b6f2423782d6ea411a0e87.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Models/SM_CreditCard-bbcb24486530578ff13365e295e1dd02_T_CreditCard_Back.png"
-dest_files=["res://.godot/imported/SM_CreditCard-bbcb24486530578ff13365e295e1dd02_T_CreditCard_Back.png-1d4a4407e97231d0547c62afd2f74d34.s3tc.ctex"]
+source_file="res://models/SM_CreditCard-bbcb24486530578ff13365e295e1dd02_T_CreditCard_Back.png"
+dest_files=["res://.godot/imported/SM_CreditCard-bbcb24486530578ff13365e295e1dd02_T_CreditCard_Back.png-068bbb5ac7b6f2423782d6ea411a0e87.s3tc.ctex"]
 
 [params]
 

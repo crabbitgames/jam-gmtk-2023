@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bd5gxj8k26dci"
-path.s3tc="res://.godot/imported/SM_PizzaBox_Closed-c4671db51de2834d22ea3d76b9247de9_T_PizzaBox_Closed.png-5a4bf1088a5250d2ab1c246d951dd552.s3tc.ctex"
+path.s3tc="res://.godot/imported/SM_PizzaBox_Closed-c4671db51de2834d22ea3d76b9247de9_T_PizzaBox_Closed.png-ad43c23595249dd3176bf36b8759b9cf.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ generator_parameters={}
 
 [deps]
 
-source_file="res://Models/SM_PizzaBox_Closed-c4671db51de2834d22ea3d76b9247de9_T_PizzaBox_Closed.png"
-dest_files=["res://.godot/imported/SM_PizzaBox_Closed-c4671db51de2834d22ea3d76b9247de9_T_PizzaBox_Closed.png-5a4bf1088a5250d2ab1c246d951dd552.s3tc.ctex"]
+source_file="res://models/SM_PizzaBox_Closed-c4671db51de2834d22ea3d76b9247de9_T_PizzaBox_Closed.png"
+dest_files=["res://.godot/imported/SM_PizzaBox_Closed-c4671db51de2834d22ea3d76b9247de9_T_PizzaBox_Closed.png-ad43c23595249dd3176bf36b8759b9cf.s3tc.ctex"]
 
 [params]
 
