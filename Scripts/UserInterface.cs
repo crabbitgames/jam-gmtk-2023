@@ -34,19 +34,13 @@ public partial class UserInterface : Control
 				displayedAmount += (int)addAttemptAmount;
 
 				// Add new note to screen.
-				TextureRect dollar = dollarTemplate.Instantiate<TextureRect>();
+				UIDollar dollar = dollarTemplate.Instantiate<UIDollar>();
 
-				dollar.Position = new Godot.Vector2(
-					x: Mathf.Round((float) GD.RandRange(0d, Size.X)),
-					y: Mathf.Round((float) GD.RandRange(0d, Size.Y))
-				);
+				dollar.Rotation = (float)GD.RandRange(0.0d, Math.PI * 2d);
 
 				dollar.Texture = _moneyHandler.GetMoneyTexture(addAttemptAmount);
 
 				AddChild(dollar);
-				
-				// TODO remove this.
-				GD.Print(((int)addAttemptAmount).ToString() + " : " + displayedAmount.ToString());
 			}
 			//The random amount is disallowed, lower the maximum random denomination
 			else {

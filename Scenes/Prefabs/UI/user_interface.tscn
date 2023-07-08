@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://7ughyvhvulix"]
+[gd_scene load_steps=4 format=3 uid="uid://dote7ehj137wm"]
 
 [ext_resource type="Script" path="res://Scripts/UserInterface.cs" id="1_int6i"]
 [ext_resource type="PackedScene" uid="uid://cd7uk2so3xek1" path="res://Scenes/Prefabs/UI/dollar_template.tscn" id="2_x8pae"]
@@ -91,3 +91,16 @@ color = Color(1, 0, 0, 1)
 custom_minimum_size = Vector2(25, 0)
 layout_mode = 2
 color = Color(1, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -2
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.01
+anchor_top = 0.2
+anchor_right = 0.2
+anchor_bottom = 0.7
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.196078)
