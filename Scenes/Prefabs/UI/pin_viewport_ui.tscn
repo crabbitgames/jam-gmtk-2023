@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dvn4bmx1o7tgl"]
+
+[node name="PinViewportUI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 350.0
+offset_bottom = 100.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "This is a test"
