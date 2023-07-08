@@ -6,6 +6,8 @@
 script = ExtResource("1_omjci")
 userInterfaceNodePath = NodePath("../UserInterface")
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="CameraController" type="Node3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0.8, 0)
+
+[node name="Camera" type="Camera3D" parent="CameraController"]
 fov = 45.0

@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dma3xt1aa6lqf"]
+[gd_scene load_steps=8 format=3 uid="uid://de103fimn4kkq"]
 
-[ext_resource type="PackedScene" uid="uid://f1n0q4shhh0x" path="res://models/SM_Office.fbx" id="1_qckmj"]
-[ext_resource type="PackedScene" uid="uid://b73kswuwc1m67" path="res://models/SM_CharacterTest.fbx" id="2_6g7ee"]
+[ext_resource type="PackedScene" uid="uid://f1n0q4shhh0x" path="res://Models/SM_Office.fbx" id="1_qckmj"]
+[ext_resource type="PackedScene" uid="uid://b73kswuwc1m67" path="res://Models/SM_CharacterTest.fbx" id="2_6g7ee"]
+[ext_resource type="PackedScene" uid="uid://d3s07in3u2bdd" path="res://Models/SM_ATM_Pin.fbx" id="3_yiscd"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m6pob"]
 
@@ -59,3 +60,6 @@ mesh = SubResource("BoxMesh_btiji")
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1.843e-08, 0, 1, 0, 0.0119822, 0, -0.421629, 0, -4.37114e-08, 0.505328, 0.38938, 0.71048)
 mesh = SubResource("BoxMesh_btiji")
+
+[node name="SM_ATM_Pin" parent="." instance=ExtResource("3_yiscd")]
+transform = Transform3D(-1.52691e-08, -0.137949, -0.37546, -6.02994e-09, 0.37546, -0.137949, 0.4, 3.94117e-10, -1.64119e-08, 0.904769, 0.953135, -0.00121153)
