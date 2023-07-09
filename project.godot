@@ -15,6 +15,10 @@ run/main_scene="res://Scenes/atm_scene.tscn"
 config/features=PackedStringArray("4.1", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+DiscordSDKLoader="*res://addons/discord-sdk-gd/nodes/core_updater.gd"
+
 [display]
 
 window/size/viewport_width=480
@@ -24,6 +28,10 @@ window/stretch/mode="viewport"
 [dotnet]
 
 project/assembly_name="Automatic Theft Machine"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/discord-sdk-gd/plugin.cfg")
 
 [rendering]
 

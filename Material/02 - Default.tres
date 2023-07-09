@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://chjp7q3krmobr"]
+
+[ext_resource type="Texture2D" uid="uid://ctyrl6mu13c3g" path="res://Textures/T_Female.png" id="1_q4y8r"]
+
+[resource]
+resource_name = "02 - Default"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_q4y8r")
+metallic_specular = 0.0
+roughness = 0.707107

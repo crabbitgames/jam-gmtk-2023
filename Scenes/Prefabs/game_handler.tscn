@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://e3q2hklx6y06"]
+
+[ext_resource type="Script" path="res://Scripts/GameHandler.cs" id="1_jr8dl"]
+[ext_resource type="PackedScene" uid="uid://cgrp2plikfwqk" path="res://Scenes/Prefabs/Victims/victim.tscn" id="2_b22id"]
+[ext_resource type="PackedScene" uid="uid://d13geud3famxr" path="res://Scenes/Prefabs/Objects/credit_card.tscn" id="3_i2r4f"]
+
+[node name="GameHandler" type="Node"]
+script = ExtResource("1_jr8dl")
+victimPackedScene = ExtResource("2_b22id")
+creditCardPackedScene = ExtResource("3_i2r4f")
+
+[node name="VictimSpawnTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="VictimSpawnTimer" to="." method="OnVictimSpawnTimerEnd"]

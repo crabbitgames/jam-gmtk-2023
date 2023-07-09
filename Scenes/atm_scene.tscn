@@ -1,103 +1,12 @@
-[gd_scene load_steps=13 format=3 uid="uid://m43dqdip5466"]
+[gd_scene load_steps=8 format=3 uid="uid://m43dqdip5466"]
 
 [ext_resource type="PackedScene" uid="uid://de103fimn4kkq" path="res://Scenes/Prefabs/environment.tscn" id="1_037x0"]
 [ext_resource type="PackedScene" uid="uid://dhbmhcegm1wls" path="res://Scenes/Prefabs/player.tscn" id="2_h3ypy"]
 [ext_resource type="PackedScene" uid="uid://dote7ehj137wm" path="res://Scenes/Prefabs/UI/user_interface.tscn" id="4_rdswo"]
 [ext_resource type="PackedScene" uid="uid://bbxg81cmjqf3h" path="res://Scenes/Prefabs/money_handler.tscn" id="5_u6hwv"]
 [ext_resource type="PackedScene" uid="uid://6ktp0578lsy5" path="res://Scenes/Prefabs/dynamic_environment.tscn" id="5_xkxia"]
-[ext_resource type="PackedScene" uid="uid://d13geud3famxr" path="res://Scenes/Prefabs/Objects/credit_card.tscn" id="6_qejub"]
-[ext_resource type="Script" path="res://Scripts/Victim.cs" id="7_0pkom"]
-[ext_resource type="PackedScene" uid="uid://c7s7t1wmijf5a" path="res://Models/SM_FemaleNPC.fbx" id="7_obyi2"]
-
-[sub_resource type="Animation" id="Animation_qitu2"]
-resource_name = "Anim_WalkAway"
-length = 5.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.9, 3, 5),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(1.26671, 0, 0.107665), Vector3(1.577, 0, 0.108), Vector3(2.11448, 0, 0.107665), Vector3(2.114, 0, 1.358)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1, 2.5, 3.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, -3.14159, 0), Vector3(0, -3.14159, 0), Vector3(0, -4.71239, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_xn0nm"]
-resource_name = "Anim_WalkUp"
-length = 5.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 3, 5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(2.11448, 0, -0.996484), Vector3(2.11448, 0, 0.107665), Vector3(1.26671, 0, 0.107665)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(2.5, 3.5, 5),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 1.5708, 0), Vector3(0, 0, 0), Vector3(0, 0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_pnw8r"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(1.26671, 0, 0.107665)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_u466d"]
-_data = {
-"Anim_WalkAway": SubResource("Animation_qitu2"),
-"Anim_WalkUp": SubResource("Animation_xn0nm"),
-"RESET": SubResource("Animation_pnw8r")
-}
+[ext_resource type="PackedScene" uid="uid://e3q2hklx6y06" path="res://Scenes/Prefabs/game_handler.tscn" id="8_akaru"]
+[ext_resource type="Script" path="res://Scenes/DiscordPresence.gd" id="9_dh7ka"]
 
 [node name="ATM Scene" type="Node"]
 
@@ -114,18 +23,7 @@ moneyHandlerNodePath = NodePath("../MoneyHandler")
 
 [node name="DynamicEnvironment" parent="." instance=ExtResource("5_xkxia")]
 
-[node name="Credit Card" parent="." instance=ExtResource("6_qejub")]
-transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0.971741, 0.867824, -0.199117)
+[node name="DiscordPresence" type="Node" parent="."]
+script = ExtResource("9_dh7ka")
 
-[node name="Victim" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.26671, 0, 0.107665)
-script = ExtResource("7_0pkom")
-
-[node name="SM_FemaleNPC" parent="Victim" instance=ExtResource("7_obyi2")]
-transform = Transform3D(-7.30776e-09, 0, -0.167182, 0, 0.167182, 0, 0.167182, 0, -7.30776e-09, 0, 0.65, 0)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Victim"]
-autoplay = "Anim_WalkUp"
-libraries = {
-"": SubResource("AnimationLibrary_u466d")
-}
+[node name="GameHandler" parent="." instance=ExtResource("8_akaru")]

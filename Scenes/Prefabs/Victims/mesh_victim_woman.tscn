@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://0eapi8c45lld"]
+
+[ext_resource type="PackedScene" uid="uid://c3c7prun1s0k4" path="res://Models/AM_AnimationWoman.fbx" id="1_p62vr"]
+[ext_resource type="AnimationLibrary" uid="uid://clqj1we2aprvg" path="res://Anim/AnimLib_Victim_Woman.res" id="2_tedrl"]
+
+[node name="mesh_victim_woman" instance=ExtResource("1_p62vr")]
+
+[node name="Skeleton3D" parent="RootNode" index="1"]
+bones/1/rotation = Quaternion(-1.22336e-09, -1.87477e-08, 0.148655, 0.988889)
+bones/2/rotation = Quaternion(-2.5983e-10, 1.27616e-08, -0.170117, 0.985424)
+bones/4/rotation = Quaternion(1.36718e-08, -1.32186e-07, 0.0868943, 0.996218)
+bones/8/rotation = Quaternion(-0.07088, 0.0139283, 0.160877, 0.984327)
+bones/10/rotation = Quaternion(3.81586e-11, -1.0876e-08, 2.27374e-13, 1)
+bones/11/rotation = Quaternion(-4.57321e-14, 7.10543e-15, 2.84217e-14, 1)
+bones/15/rotation = Quaternion(0.0708799, -0.0139283, 0.160878, 0.984327)
+
+[node name="AnimationPlayer" parent="." index="1"]
+libraries = {
+"AnimLib_Victim_Woman": ExtResource("2_tedrl")
+}

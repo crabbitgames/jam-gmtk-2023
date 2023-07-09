@@ -1,7 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://6ktp0578lsy5"]
+[gd_scene load_steps=14 format=3 uid="uid://6ktp0578lsy5"]
 
 [ext_resource type="Script" path="res://Scripts/PinDisplay.cs" id="1_3hbxb"]
 [ext_resource type="PackedScene" uid="uid://dvn4bmx1o7tgl" path="res://Scenes/Prefabs/UI/pin_viewport_ui.tscn" id="2_3ob7n"]
+[ext_resource type="ArrayMesh" uid="uid://gufuhd3rs0m2" path="res://Models/ArrM_Computer_Screen.res" id="3_cayib"]
+[ext_resource type="PackedScene" uid="uid://cyaajje8ete2n" path="res://Scenes/Prefabs/UI/computer_viewport_ui.tscn" id="6_ipqgp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qg7t4"]
 
@@ -99,6 +101,14 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_wssby")
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_3duae"]
+viewport_path = NodePath("SM_Computer_Screen/ComputerViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_74ebn"]
+resource_local_to_scene = true
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_3duae")
+
 [node name="DynamicEnvironment" type="Node3D"]
 
 [node name="SM_ATM_Pin" type="Node3D" parent="."]
@@ -126,3 +136,25 @@ size = Vector2i(300, 100)
 render_target_update_mode = 4
 
 [node name="PinViewportUI" parent="PinViewport" instance=ExtResource("2_3ob7n")]
+
+[node name="SM_Computer_Screen" type="Node3D" parent="."]
+transform = Transform3D(-1.0885, 4.63609e-05, -0.158665, 6.67138e-06, 1.1, 0.000275645, 0.158665, 0.0002718, -1.0885, 0.603644, 0.514914, 0.859055)
+
+[node name="RootNode" type="Node3D" parent="SM_Computer_Screen"]
+
+[node name="SM_Computer_Screen" type="MeshInstance3D" parent="SM_Computer_Screen/RootNode"]
+transform = Transform3D(2.54, 0, 0, 0, 0, 2.54, 0, -2.54, 0, 0, 0, 0)
+mesh = ExtResource("3_cayib")
+skeleton = NodePath("")
+surface_material_override/2 = SubResource("StandardMaterial3D_74ebn")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="SM_Computer_Screen"]
+transform = Transform3D(0.909088, 1.30967e-10, 0, 0, 0.909091, 5.52973e-10, 0, -5.82077e-11, 0.909088, 0.00422716, 0.0796059, 0.142884)
+light_color = Color(0.431373, 1, 1, 1)
+light_energy = 0.013
+omni_range = 0.309
+
+[node name="ComputerViewport" type="SubViewport" parent="SM_Computer_Screen"]
+size = Vector2i(121, 84)
+
+[node name="ComputerViewportUI" parent="SM_Computer_Screen/ComputerViewport" instance=ExtResource("6_ipqgp")]

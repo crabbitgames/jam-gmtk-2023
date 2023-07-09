@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://doosxo82np8w6"]
+
+[ext_resource type="PackedScene" uid="uid://ij4m1r2xh1l8" path="res://Models/AM_AnimationMan.fbx" id="1_d4qpr"]
+[ext_resource type="AnimationLibrary" uid="uid://bvarjo312j42r" path="res://Anim/AnimLib_Victim.res" id="2_3q08y"]
+
+[node name="mesh_victim_man" instance=ExtResource("1_d4qpr")]
+
+[node name="Skeleton3D" parent="RootNode" index="1"]
+bones/1/rotation = Quaternion(-7.86929e-09, -8.05426e-08, 0.0850304, 0.996378)
+bones/2/rotation = Quaternion(-6.05335e-10, 7.58577e-08, -0.157309, 0.987549)
+bones/8/rotation = Quaternion(-0.0676944, 0.648755, 0.0822272, 0.753507)
+bones/12/rotation = Quaternion(0.0676945, -0.648754, 0.082227, 0.753508)
+
+[node name="AnimationPlayer" parent="." index="1"]
+autoplay = "AnimLib_Victim/Idle"
+libraries = {
+"AnimLib_Victim": ExtResource("2_3q08y")
+}
