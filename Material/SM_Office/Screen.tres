@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dt7ofevlhco2g"]
+
+[resource]
+resource_name = "Screen"
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.207843, 0.509804, 0.811765, 0.168627)

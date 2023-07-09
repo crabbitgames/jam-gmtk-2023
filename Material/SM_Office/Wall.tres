@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://nyrk8qgr6r1x"]
+
+[ext_resource type="Texture2D" uid="uid://bh6770h3kysxk" path="res://Models/SM_Office-19c904d084dd4e45ac3b79b89944d624_T_Wall.png" id="1_oe8it"]
+
+[resource]
+resource_name = "Wall"
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 1, 1)
+albedo_texture = ExtResource("1_oe8it")
+metallic = 0.4
+roughness = 0.707107

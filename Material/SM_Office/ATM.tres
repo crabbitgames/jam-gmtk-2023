@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bik64s44osxgo"]
+
+[ext_resource type="Texture2D" uid="uid://dovr1wyfl7e6" path="res://Models/SM_Office-19c904d084dd4e45ac3b79b89944d624_T_Light Grey.png" id="1_rg4rm"]
+
+[resource]
+resource_name = "ATM"
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 1, 1)
+albedo_texture = ExtResource("1_rg4rm")
+metallic = 0.4
+roughness = 0.707107

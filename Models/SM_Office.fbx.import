@@ -30,13 +30,33 @@ animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={
 "materials": {
-"M_ATM_Screen": {
+"ATM": {
 "use_external/enabled": true,
-"use_external/path": "res://Material/M_ATM_Screen.tres"
+"use_external/path": "res://Material/SM_Office/ATM.tres"
 },
-"M_Office": {
+"ATM Drawers": {
 "use_external/enabled": true,
-"use_external/path": "res://Material/M_Office.tres"
+"use_external/path": "res://Material/SM_Office/ATM Drawers.tres"
+},
+"Brick": {
+"use_external/enabled": true,
+"use_external/path": "res://Material/SM_Office/Brick.tres"
+},
+"Card": {
+"use_external/enabled": true,
+"use_external/path": "res://Material/SM_Office/Card.tres"
+},
+"Floor": {
+"use_external/enabled": true,
+"use_external/path": "res://Material/SM_Office/Floor.tres"
+},
+"Screen": {
+"use_external/enabled": true,
+"use_external/path": "res://Material/SM_Office/Screen.tres"
+},
+"Wall": {
+"use_external/enabled": true,
+"use_external/path": "res://Material/SM_Office/Wall.tres"
 }
 },
 "meshes": {

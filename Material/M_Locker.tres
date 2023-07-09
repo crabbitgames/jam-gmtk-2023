@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://d2ru1ujn24y1c"]
+
+[ext_resource type="Texture2D" uid="uid://b8nt2wu6q8v7u" path="res://Textures/T_Locker.png" id="1_ssqo2"]
+
+[resource]
+resource_name = "Locker"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_ssqo2")
+metallic = 0.4
+roughness = 0.229416
+emission_enabled = true
+emission_energy_multiplier = 0.42
+emission_texture = ExtResource("1_ssqo2")

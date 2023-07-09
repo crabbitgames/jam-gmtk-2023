@@ -12,7 +12,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_tb0ts"]
 line_spacing = 0.0
 font_size = 31
-font_color = Color(0, 0, 0, 0.392157)
+font_color = Color(1, 1, 1, 0.109804)
 
 [node name="UserInterface" type="Control"]
 layout_mode = 3

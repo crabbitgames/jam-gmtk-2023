@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cncrr4osq2la0"]
+
+[ext_resource type="Texture2D" uid="uid://behfhqm88r8ym" path="res://Models/SM_Office-19c904d084dd4e45ac3b79b89944d624_T_Marble-1.png" id="1_5nic7"]
+
+[resource]
+resource_name = "ATM Drawers"
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 1, 1)
+albedo_texture = ExtResource("1_5nic7")
+metallic = 0.4
+roughness = 0.707107
