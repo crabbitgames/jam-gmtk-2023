@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://m43dqdip5466"]
+[gd_scene load_steps=13 format=3 uid="uid://m43dqdip5466"]
 
 [ext_resource type="PackedScene" uid="uid://de103fimn4kkq" path="res://Scenes/Prefabs/environment.tscn" id="1_037x0"]
 [ext_resource type="PackedScene" uid="uid://dhbmhcegm1wls" path="res://Scenes/Prefabs/player.tscn" id="2_h3ypy"]
@@ -8,6 +8,34 @@
 [ext_resource type="PackedScene" uid="uid://d13geud3famxr" path="res://Scenes/Prefabs/Objects/credit_card.tscn" id="6_qejub"]
 [ext_resource type="Script" path="res://Scripts/Victim.cs" id="7_0pkom"]
 [ext_resource type="PackedScene" uid="uid://c7s7t1wmijf5a" path="res://Models/SM_FemaleNPC.fbx" id="7_obyi2"]
+
+[sub_resource type="Animation" id="Animation_qitu2"]
+resource_name = "Anim_WalkAway"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.9, 3, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(1.26671, 0, 0.107665), Vector3(1.577, 0, 0.108), Vector3(2.11448, 0, 0.107665), Vector3(2.114, 0, 1.358)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2.5, 3.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -3.14159, 0), Vector3(0, -3.14159, 0), Vector3(0, -4.71239, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_xn0nm"]
 resource_name = "Anim_WalkUp"
@@ -66,6 +94,7 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_u466d"]
 _data = {
+"Anim_WalkAway": SubResource("Animation_qitu2"),
 "Anim_WalkUp": SubResource("Animation_xn0nm"),
 "RESET": SubResource("Animation_pnw8r")
 }
